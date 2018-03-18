@@ -1,10 +1,9 @@
 module SumMultiplesOf3And5 where
 
-  sumMultiplesOf3And5UpTo :: Int -> Int -> Int
-
   isMultipleOf3Or5 :: Int -> Bool
   isMultipleOf3Or5 x = mod x 3 == 0 || mod x 5 == 0
 
+  sumMultiplesOf3And5UpTo :: Int -> Int -> Int
   sumMultiplesOf3And5UpTo currentNumber total =
     if currentNumber == 0
       then total
